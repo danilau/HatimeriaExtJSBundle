@@ -114,7 +114,7 @@ class JavascriptController extends Controller
      * 
      * @return mixed
      */
-    private function getParameter($key)
+    protected function getParameter($key)
     {
         return $this->container->getParameter(HatimeriaExtJSExtension::CONFIG_NAMESPACE.'.'.$key);
     }
